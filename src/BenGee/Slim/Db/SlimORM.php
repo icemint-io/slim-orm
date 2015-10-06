@@ -296,7 +296,7 @@ final class SlimORM
             if ($usr !== false) self::configure(self::USR, $usr, $name);
             $pwd = (!StringUtils::emptyOrSpaces($pwd) ? $pwd : false);
             if ($pwd !== false) self::configure(self::PWD, $pwd, $name);
-            $opt = (!StringUtils::emptyOrSpaces($opt) ? trim($opt) : false);
+            #$opt = (!StringUtils::emptyOrSpaces($opt) ? trim($opt) : false);
             if (!empty($opt)) self::configure(self::OPT, $opt, $name);
         }
         else
